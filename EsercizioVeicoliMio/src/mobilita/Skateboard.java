@@ -6,6 +6,7 @@ public class Skateboard extends Veicolo {
 		super();
 		this.tipoTrazione = new TrazioneAMotore();
 		aggiungiAmbiente(Ambiente.TERRA);
+		((TrazioneAnimale)this.tipoTrazione).tipiTrazione = Trazioni.UOMO;
 	}
 	
 

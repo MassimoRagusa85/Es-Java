@@ -2,6 +2,7 @@ package mobilita;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.spi.TimeZoneNameProvider;
 
 public abstract class Veicolo implements Spostabile {
 	
@@ -10,10 +11,12 @@ public abstract class Veicolo implements Spostabile {
 	
 	protected TipoTrazione tipoTrazione;
 	List<Ambiente> ambientiDiFunzionamento;
+	List<Trazioni> trazioni;
 	
 	public Veicolo() {
 		super();
 		this.ambientiDiFunzionamento = new ArrayList<>();
+		this.trazioni = new ArrayList<>();
 	}
 
 	public void aggiungiAmbiente(Ambiente e) {
@@ -24,13 +27,17 @@ public abstract class Veicolo implements Spostabile {
 		else {
 			System.out.println("Troppi ambienti inseriti");
 		}
-		
-		
-		
 	}
-	public TipoTrazione getTipoTrazione() {
-		return tipoTrazione;
+	public String getAmbiente() {
+		return ambientiDiFunzionamento.get(0).toString();
 	}
+	
+	public String getTipoTrazione() {
+		
+		return tipoTrazione.tipiTrazione.toString();
+		//return trazioni.get(0).toString();
+		}
+	
 
 	@Override
 	public void muovi() {

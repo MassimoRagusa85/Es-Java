@@ -2,10 +2,6 @@ package mobilita;
 
 public abstract class TipoTrazione implements Spostabile {
 	
-	boolean trazioneAnimale;
+	Trazioni tipiTrazione;
 	
-	public boolean isTrazioneAnimale() {
-		return trazioneAnimale;
-	}
-
 }

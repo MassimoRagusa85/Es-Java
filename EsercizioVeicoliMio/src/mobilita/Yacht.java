@@ -6,6 +6,7 @@ public class Yacht extends Veicolo{
 		super();
 		this.tipoTrazione = new TrazioneAMotore();
 		aggiungiAmbiente(Ambiente.ACQUA);
+		((TrazioneAMotore)this.tipoTrazione).tipiTrazione = Trazioni.MOTORE;
 	}
 	
 

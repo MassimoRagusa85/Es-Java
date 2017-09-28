@@ -6,6 +6,7 @@ public class Motocicletta extends Veicolo {
 		super();
 		this.tipoTrazione = new TrazioneAMotore();
 		aggiungiAmbiente(Ambiente.TERRA);
+		((TrazioneAMotore)this.tipoTrazione).tipiTrazione = Trazioni.MOTORE;
 	}
 
 	

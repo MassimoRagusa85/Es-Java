@@ -6,7 +6,7 @@ public class Canoa extends Veicolo {
 		super();
 		this.tipoTrazione = new TrazioneAnimale();
 		aggiungiAmbiente(Ambiente.ACQUA);
-		((TrazioneAnimale)this.tipoTrazione).specieAnimale = "Uomo";
+		((TrazioneAnimale)this.tipoTrazione).tipiTrazione = Trazioni.UOMO;
 	}
 
 	@Override

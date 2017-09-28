@@ -8,6 +8,7 @@ public class Carrozza extends Veicolo {
 		//tipoTrazione.trazioneAnimale = true;
 		aggiungiAmbiente(Ambiente.TERRA);
 		this.tipoTrazione = new TrazioneAnimale();
+		((TrazioneAnimale)this.tipoTrazione).tipiTrazione = Trazioni.CAVALLO;
 	}
 
 }

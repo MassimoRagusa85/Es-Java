@@ -6,6 +6,7 @@ public class Jet extends Veicolo {
 		super();
 		this.tipoTrazione = new TrazioneAMotore();
 		aggiungiAmbiente(Ambiente.ARIA);
+		((TrazioneAMotore)this.tipoTrazione).tipiTrazione = Trazioni.MOTORE;
 	}
 
 	

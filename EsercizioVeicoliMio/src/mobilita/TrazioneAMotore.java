@@ -6,7 +6,6 @@ public class TrazioneAMotore extends TipoTrazione {
 	
 	public TrazioneAMotore() {
 		super();
-		this.trazioneAnimale = false;
 	}
 
 	@Override

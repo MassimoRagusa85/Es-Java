@@ -2,15 +2,9 @@ package mobilita;
 
 public class TrazioneAnimale extends TipoTrazione {
 	
-	String specieAnimale;
 
 	public TrazioneAnimale() {
 		super();
-		this.trazioneAnimale = true;
-	}
-	
-	public String getSpecieAnimale() {
-		return this.specieAnimale;
 	}
 
 	@Override
